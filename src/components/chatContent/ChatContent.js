@@ -1,5 +1,4 @@
 import React, { Component, createRef } from "react";
-
 import "./chatContent.css";
 import Avatar from "../chatList/Avatar";
 import ChatItem from "./ChatItem";
@@ -112,21 +111,6 @@ export default class ChatContent extends Component {
     this.setState({ msg: e.target.value, uploadedImage: this.state.file });
   };
 
-  // resizeFile = (file) =>
-  //   new Promise((resolve) => {
-  //     Resizer.imageFileResizer(
-  //       file,
-  //       100,
-  //       100,
-  //       "JPEG",
-  //       100,
-  //       0,
-  //       (uri) => {
-  //         resolve(uri);
-  //       },
-  //       "base64"
-  //     );
-  //   });
 
   handleFileUpload = (event) => {
     const date = new Date();
@@ -153,6 +137,7 @@ export default class ChatContent extends Component {
 
   render() {
     return (
+      <div className="__main">
       <div className="main__chatcontent">
         <div className="content__header">
           <div className="blocks">
@@ -210,7 +195,8 @@ export default class ChatContent extends Component {
             </button>
           </div>
         </div>
-      </div>
+      </div></div>
     );
   }
 }
+

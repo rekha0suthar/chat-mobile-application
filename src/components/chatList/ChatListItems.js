@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Avatar from "./Avatar";
 
 export default class ChatListItems extends Component {
@@ -21,9 +22,8 @@ export default class ChatListItems extends Component {
       <div
         style={{ animationDelay: `0.${this.props.animationDelay}s` }}
         onClick={this.selectChat}
-        className={`chatlist__item ${
-          this.props.active ? this.props.active : ""
-        } `}
+        className={`chatlist__item ${this.props.active ? this.props.active : ""
+          } `}
       >
         <Avatar
           image={
@@ -31,11 +31,11 @@ export default class ChatListItems extends Component {
           }
           isOnline={this.props.isOnline}
         />
-
-        <div className="userMeta">
-          <p>{this.props.name}</p>
-          <span className="activeTime">32 mins ago</span>
-        </div>
+        <Link to="/chat">
+          <div className="userMeta">
+            <p>{this.props.name}</p>
+            <span className="activeTime">32 mins ago</span>
+          </div></Link>
       </div>
     );
   }

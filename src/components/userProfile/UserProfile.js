@@ -7,7 +7,6 @@ export default class UserProfile extends Component {
   };
   render() {
     return (
-      <div className="main__userprofile">
         <div className="profile__card user__profile__image">
           <div className="profile__image">
             <img
@@ -15,9 +14,7 @@ export default class UserProfile extends Component {
               alt="profile"
             />
           </div>
-          <h4>John</h4>
         </div>
-      </div>
     );
   }
 }

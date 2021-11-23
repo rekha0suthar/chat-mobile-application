@@ -1,8 +1,6 @@
 .main__chatcontent {
   flex-grow: 1;
   padding: 10px;
-  max-width: 70%;
-  border-right: 1px solid #ebe7fb;
 }
 .content__header {
   padding-bottom: 15px;
@@ -94,7 +92,7 @@
   transform-origin: left;
 }
 .chat__item.other .chat__item__content {
-  background-color: #fff;
+  background-color: whitesmoke;
   color: #000;
   border-radius: 10px 10px 10px 0;
 }

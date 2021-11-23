@@ -13,3 +13,9 @@
   max-width: 100%;
   cursor: pointer;
 }
+
+.nav__profile {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}

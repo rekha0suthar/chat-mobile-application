@@ -107,6 +107,7 @@ export default class ChatList extends Component {
                 active={item.active ? "active" : ""}
                 isOnline={item.isOnline ? "active" : ""}
                 image={item.image}
+                handleChatContent={this.props.handleChatContent}
               />
             );
           })}
