@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.app {
+  text-align: center;
+  margin: 0;
+}
+
+.__main {
+  margin: auto;
+  background-color: #fff;
+  min-height: 80vh;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  padding: 20px;
+}
+
+.btn {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 230px;
+  height: 47px;
+  line-height: 47px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.02);
+  display: flex;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #4664ff;
+  color: #fff;
+  transform: scale(1.02);
+}
+
+.btn i {
+  flex: 0.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  border-right: 1px solid #ebe7fb;
+}
+
+.btn span {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6c84ff;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3b5bfe;
+}
+
+.mobile__login {
+  background-color: #fff;
+  display: block;
+  padding: 20px;
+  height: 250px;
+  align-items: center;
+  padding-top: 10px;
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+.mobile__login button {
+  color: white;
+  background-color: rgb(94, 207, 245);
+  border-radius: 7px;
+  border: 1px solid white;
+  width: 100px;
+  height: 35px;
+  font-size: 16px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.mobile__login input {
+  padding: 8px;
+  border: 2px solid gray;
+  border-radius: 7px;
+  height: 35px;
+  width: 200px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.otp__container {
+  background-color: #fff;
+  display: block;
+  padding: 20px;
+  height: 250px;
+  align-items: center;
+  padding-top: 10px;
+  width: 300px;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+.otp__container div {
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.otp__container div div input {
+  width: 40px !important;
+  height: 40px;
+  font-size: 18px !important;
+}
+
+.button {
+  color: white;
+  background-color: rgb(94, 207, 245);
+  border-radius: 7px;
+  border: 1px solid white;
+  width: 100px;
+  height: 35px;
+  font-size: 16px;
+  margin-top: 40px;
+  cursor: pointer;
+}
